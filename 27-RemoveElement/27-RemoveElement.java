@@ -1,0 +1,13 @@
+// Last updated: 7/9/2026, 9:11:22 AM
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            if(val!=nums[i]){
+                nums[count]=nums[i];
+                count++;
+            }
+        }
+        return count;
+    }
+}
